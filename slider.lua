@@ -28,7 +28,9 @@ return function(core, info, ...)
 			info.value = v
 			value_changed = true
 		end
+	end
 
+	if core:isHovered(opt.id) then
 		-- keyboard update
 		local key_up = opt.vertical and 'up' or 'right'
 		local key_down = opt.vertical and 'down' or 'left'
